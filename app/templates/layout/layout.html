@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Спроба 243">
+        <title>Спроба 243</title>
+    </head>
+    <body>
+        {% include "layout/header.html" ignore missing with context %}
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        {% include "layout/footer.html" ignore missing without context %}
+    </body>
+</html>
